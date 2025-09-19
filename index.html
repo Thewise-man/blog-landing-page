@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <script src="https://kit.fontawesome.com/3287bd83ab.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -23,29 +25,47 @@
   <body>
     <section id="hero-section">
       <nav class="nav-bar">
-        <img src="./images/logo.svg" alt="logo" class="logo-img" />
-        <div>
-          <ul class="list">
-            <li>
-              <a href="#"></a>Product
-              <img src="./images/icon-arrow-light.svg" alt="arrow" />
-            </li>
-            <li>
-              <a href="#"></a>Company
-              <img src="./images/icon-arrow-light.svg" alt="arrow" />
-            </li>
-            <li>
-              <a href="#"></a>Connect
-              <img src="./images/icon-arrow-light.svg" alt="arrow" />
-            </li>
-          </ul>
+        <div class="logo-img">
+          <img src="./images/logo.svg" alt="logo"/>
         </div>
+
+        <ul class="menuList">
+          <li>
+            <a href="#">Product</a>
+            <img src="./images/icon-arrow-light.svg" alt="arrow" />
+          </li>
+          <li>
+            <a href="#">Company</a>
+            <img src="./images/icon-arrow-light.svg" alt="arrow" />
+          </li>
+          <li>
+            <a href="#">Connect</a>
+            <img src="./images/icon-arrow-light.svg" alt="arrow" />
+          </li>
+        </ul>
 
         <div class="button">
           <button class="plain-btn">Login</button>
           <button class="styled">Sign Up</button>
         </div>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
       </nav>
+      <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+          if(menuList.style.maxHeight = "0px")
+        {
+          menuList.style.maxHeight = "300px";
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+        }
+      </script>
       <div class="hero2">
         <h2 id="text">A modern publishing platform</h2>
         <p>Grow your audience and build your online brand</p>
