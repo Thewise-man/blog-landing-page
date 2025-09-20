@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <script src="https://kit.fontawesome.com/3287bd83ab.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/3287bd83ab.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -26,10 +28,10 @@
     <section id="hero-section">
       <nav class="nav-bar">
         <div class="logo-img">
-          <img src="./images/logo.svg" alt="logo"/>
+          <img src="./images/logo.svg" alt="logo" />
         </div>
 
-        <ul class="menuList">
+        <ul id="menuList">
           <li>
             <a href="#">Product</a>
             <img src="./images/icon-arrow-light.svg" alt="arrow" />
@@ -42,28 +44,26 @@
             <a href="#">Connect</a>
             <img src="./images/icon-arrow-light.svg" alt="arrow" />
           </li>
+          <div class="button">
+            <button class="plain-btn">Login</button>
+            <button class="styled">Sign Up</button>
+          </div>
         </ul>
 
-        <div class="button">
-          <button class="plain-btn">Login</button>
-          <button class="styled">Sign Up</button>
-        </div>
         <div class="menu-icon">
           <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
       </nav>
       <script>
-        let menuList = document.getElementById("menuList")
+        let menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px";
 
-        function toggleMenu(){
-          if(menuList.style.maxHeight = "0px")
-        {
-          menuList.style.maxHeight = "300px";
-        }
-        else{
-          menuList.style.maxHeight = "0px";
-        }
+        function toggleMenu() {
+          if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "300px";
+          } else {
+            menuList.style.maxHeight = "0px";
+          }
         }
       </script>
       <div class="hero2">
@@ -225,6 +225,7 @@
         </div>
       </div>
     </footer> -->
+    
   </body>
 </html>
 

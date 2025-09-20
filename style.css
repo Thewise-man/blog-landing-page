@@ -221,7 +221,7 @@ h3{
         right: 0;
         flex-direction: column;
         text-align: center;
-        background: blue;
+        background: hsl(13, 100%, 72%);
         gap: 0;
         overflow: hidden;
     }
