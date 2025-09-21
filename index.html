@@ -35,14 +35,32 @@
           <li>
             <a href="#">Product</a>
             <img src="./images/icon-arrow-light.svg" alt="arrow" />
+            <ul class="dropdown">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
           </li>
           <li>
             <a href="#">Company</a>
             <img src="./images/icon-arrow-light.svg" alt="arrow" />
+            <ul class="dropdown">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>careers</li>
+            </ul>
           </li>
           <li>
             <a href="#">Connect</a>
             <img src="./images/icon-arrow-light.svg" alt="arrow" />
+            <ul class="dropdown">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
           </li>
           <div class="button">
             <button class="plain-btn">Login</button>
@@ -54,18 +72,6 @@
           <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
       </nav>
-      <script>
-        let menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-
-        function toggleMenu() {
-          if (menuList.style.maxHeight == "0px") {
-            menuList.style.maxHeight = "300px";
-          } else {
-            menuList.style.maxHeight = "0px";
-          }
-        }
-      </script>
       <div class="hero2">
         <h2 id="text">A modern publishing platform</h2>
         <p>Grow your audience and build your online brand</p>
@@ -109,11 +115,14 @@
           </div>
         </div>
         <div class="grid3">
-          <img
+          <picture>
+            <source srcset="./images/illustration-editor-mobile.svg" media="(max-width: 600px)">
+            <img
             src="./images/illustration-editor-desktop.svg"
             alt="illustration"
             class="circle-img2"
           />
+          </picture>
         </div>
       </div>
     </section>
@@ -121,7 +130,6 @@
     <section class="section2">
       <div class="container2">
         <div class="image-content">
-          <!-- <img src="./images/bg-pattern-circles.svg" alt="circle" class="img1" /> -->
           <img
             src="./images/illustration-phones.svg"
             alt="phones"
@@ -146,7 +154,9 @@
     <section class="section3">
       <div class="container3">
         <div class="image-content2">
-          <img src="./images/illustration-laptop-desktop.svg" alt="" />
+          <picture>
+            <source srcset="./images/illustration-laptop-mobile.svg" media="(max-width: 600px)">
+            <img src="./images/illustration-laptop-desktop.svg" alt="laptop" />
         </div>
 
         <div class="text-column2">
@@ -213,19 +223,7 @@
       </div>
     </section>
 
-    <!--  <footer>
-      <div class="container4">
-        <div class="footer-bar">
-          <img src="./images/logo.svg" alt="logo"  class="img7"/>
-          <ul>
-            <li>Product</li>
-            <li>Company</li>
-            <li>Connect</li>
-          </ul>
-        </div>
-      </div>
-    </footer> -->
-    
+    <script src="./index.js"></script>
   </body>
 </html>
 
