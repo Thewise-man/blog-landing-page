@@ -286,7 +286,7 @@ h3{
         flex-direction: column;
         align-items: center;
         width: 375px;
-        height: 600px;
+        height: 1000px;
         background-image: url("./images/bg-pattern-circles.svg");
         background-repeat: no-repeat;
         background-position:top -200px center;
@@ -298,8 +298,18 @@ h3{
         height: auto;
         margin-top: -100px;
     }
+    .text2{
+        font-size: 15px;
+        margin-top: 50px;
+        padding-top: 20px;
+    }
+    .para1{
+        padding-bottom: -20px;
+        font-size: 10px;
+    }
     .text-column2{
         text-align: center;
+        padding-left: 200px;
     }
     .container3{
         display: flex;
